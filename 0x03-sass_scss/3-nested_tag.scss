@@ -1,0 +1,9 @@
+/* Assigns no margin or padding in body and margin 10px to all p inside body */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  p {
+    margin: 10px;
+  }
+}
