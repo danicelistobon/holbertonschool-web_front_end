@@ -1,0 +1,11 @@
+/* Assigns text color #3D3D3D to elements inside body and text color #FF0000 to any elements of class .red that are the first children of the body */
+
+$color1: #3d3d3d;
+$color2: #ff0000;
+
+body {
+  color: $color1;
+  > .red {
+    color: $color2;
+  }
+}
