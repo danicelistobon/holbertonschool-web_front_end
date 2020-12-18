@@ -1,0 +1,15 @@
+/* Assigns font size 14px to all body, 16px to all h1 inside body and 12px to h1 of class .smaller inside body */
+
+$font1: 14px;
+$font2: 16px;
+$font3: 12px;
+
+body{
+  font-size: $font1;
+  h1{
+    font-size: $font2;
+    &.smaller{
+      font-size: $font3;
+    }
+  }
+}
