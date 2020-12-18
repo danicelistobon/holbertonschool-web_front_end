@@ -1,0 +1,14 @@
+/* Assigns margin left and right at 10px to body and margin left and right at 15px to div */
+
+@mixin margin($px) {
+  margin-left: $px;
+  margin-right: $px;
+}
+
+body {
+  @include margin(10px);
+}
+
+div {
+  @include margin(15px);
+}
