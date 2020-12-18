@@ -1,0 +1,13 @@
+/* Assigns text color $red from 10-colors.scss to the class .red, text color $green to the class .green and text color $blue to the class .blue */
+
+@import "10-colors.scss";
+
+.red {
+  color: $red;
+}
+.green {
+  color: $green;
+}
+.blue {
+  color: $blue;
+}
