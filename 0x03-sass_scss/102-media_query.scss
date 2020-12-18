@@ -1,0 +1,29 @@
+/* Assigns font size 20px to h1, 18px to h1 when width is smaller than 960px, 16px to h1 when width is smaller than 640px, 14px to h1 when width is smaller than 320px and text color #1D1D1D to h1.small when width is smaller than 320px */
+
+$font1: 20px;
+$font2: 18px;
+$font3: 16px;
+$font4: 14px;
+$color: #1D1D1D;
+
+h1 {
+  font-size: $font1;
+  @media screen and (max-width: 960px) {
+    & {
+      font-size: $font2;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    & {
+      font-size: $font3;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    & {
+      font-size: $font4;
+    }
+    &.small {
+      color: $color;
+    }
+  }
+}
